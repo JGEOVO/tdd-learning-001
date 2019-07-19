@@ -5,8 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "jest --watchAll",
-    "test:2": "jest --watchAll --reporters default jest-stare",
-    "test:report": "test --verbose --reporters default jest-stare"
+    "test:report": "jest --watchAll --coverage --reporters default jest-stare"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -25,5 +24,8 @@
     "mockdate": "^2.0.3",
     "sinon": "^7.3.2",
     "supertest": "^4.0.2"
+  },
+  "jest-stare": {
+    "coverageLink": "../../api/coverage/lcov-report/index.html"
   }
 }

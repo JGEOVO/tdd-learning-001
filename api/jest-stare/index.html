@@ -79,7 +79,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">2 passed, 2 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">4 passed, 4 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -100,6 +100,7 @@
 
         <div class="d-none" id="test-config">{
   &quot;additionalResultsProcessors&quot;: [],
+  &quot;coverageLink&quot;: &quot;..&#x2F;..&#x2F;api&#x2F;coverage&#x2F;lcov-report&#x2F;index.html&quot;,
   &quot;resultDir&quot;: &quot;.&#x2F;jest-stare&#x2F;&quot;,
   &quot;resultHtml&quot;: &quot;index.html&quot;,
   &quot;resultJson&quot;: &quot;jest-results.json&quot;
@@ -108,13 +109,13 @@
   &quot;numFailedTestSuites&quot;: 0,
   &quot;numFailedTests&quot;: 0,
   &quot;numPassedTestSuites&quot;: 2,
-  &quot;numPassedTests&quot;: 2,
+  &quot;numPassedTests&quot;: 4,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 2,
-  &quot;numTotalTests&quot;: 2,
+  &quot;numTotalTests&quot;: 4,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -131,53 +132,18 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1563564526441,
+  &quot;startTime&quot;: 1563569827202,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
       &quot;failureMessage&quot;: null,
       &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
+      &quot;numPassingTests&quot;: 2,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1563564527556,
-        &quot;start&quot;: 1563564526786
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;exercise&#x2F;users.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [],
-          &quot;duration&quot;: 7,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;two plus two is four&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;two plus two is four&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1563564527580,
-        &quot;start&quot;: 1563564526794
+        &quot;end&quot;: 1563569829536,
+        &quot;start&quot;: 1563569827600
       },
       &quot;snapshot&quot;: {
         &quot;added&quot;: 0,
@@ -192,25 +158,920 @@
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [],
-          &quot;duration&quot;: 8,
+          &quot;duration&quot;: 5,
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;two plus two is four&quot;,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 0,
           &quot;status&quot;: &quot;passed&quot;,
           &quot;title&quot;: &quot;two plus two is four&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;POST &#x2F;users&#x2F;subscribe&quot;
+          ],
+          &quot;duration&quot;: 97,
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;POST &#x2F;users&#x2F;subscribe should return a 200 status code&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should return a 200 status code&quot;
+        }
+      ],
+      &quot;skipped&quot;: false,
+      &quot;leaks&quot;: false
+    },
+    {
+      &quot;failureMessage&quot;: null,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 2,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 1563569829756,
+        &quot;start&quot;: 1563569827579
+      },
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0,
+        &quot;uncheckedKeys&quot;: []
+      },
+      &quot;testFilePath&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;exercise&#x2F;users.test.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [],
+          &quot;duration&quot;: 5,
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;two plus two is four&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;two plus two is four&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;POST &#x2F;users&#x2F;subscribe&quot;
+          ],
+          &quot;duration&quot;: 102,
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;POST &#x2F;users&#x2F;subscribe should return a 200 status code&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should return a 200 status code&quot;
         }
       ],
       &quot;skipped&quot;: false,
       &quot;leaks&quot;: false
     }
   ],
-  &quot;wasInterrupted&quot;: false
+  &quot;wasInterrupted&quot;: false,
+  &quot;coverageMap&quot;: {
+    &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;app.js&quot;: {
+      &quot;path&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;app.js&quot;,
+      &quot;statementMap&quot;: {
+        &quot;0&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 13
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 28
+          }
+        },
+        &quot;1&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 70
+          }
+        },
+        &quot;2&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 3,
+            &quot;column&quot;: 18
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 3,
+            &quot;column&quot;: 40
+          }
+        },
+        &quot;3&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 4,
+            &quot;column&quot;: 14
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 4,
+            &quot;column&quot;: 32
+          }
+        },
+        &quot;4&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 5,
+            &quot;column&quot;: 19
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 5,
+            &quot;column&quot;: 43
+          }
+        },
+        &quot;5&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 13
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 30
+          }
+        },
+        &quot;6&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 8,
+            &quot;column&quot;: 18
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 8,
+            &quot;column&quot;: 43
+          }
+        },
+        &quot;7&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 9,
+            &quot;column&quot;: 18
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 9,
+            &quot;column&quot;: 52
+          }
+        },
+        &quot;8&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 10,
+            &quot;column&quot;: 26
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 10,
+            &quot;column&quot;: 60
+          }
+        },
+        &quot;9&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 12,
+            &quot;column&quot;: 10
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 12,
+            &quot;column&quot;: 19
+          }
+        },
+        &quot;10&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 15,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 15,
+            &quot;column&quot;: 48
+          }
+        },
+        &quot;11&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 16,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 16,
+            &quot;column&quot;: 31
+          }
+        },
+        &quot;12&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 18,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 18,
+            &quot;column&quot;: 23
+          }
+        },
+        &quot;13&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 19,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 19,
+            &quot;column&quot;: 24
+          }
+        },
+        &quot;14&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 20,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 20,
+            &quot;column&quot;: 49
+          }
+        },
+        &quot;15&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 21,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 21,
+            &quot;column&quot;: 24
+          }
+        },
+        &quot;16&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 22,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 22,
+            &quot;column&quot;: 56
+          }
+        },
+        &quot;17&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 24,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 24,
+            &quot;column&quot;: 26
+          }
+        },
+        &quot;18&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 25,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 25,
+            &quot;column&quot;: 47
+          }
+        },
+        &quot;19&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 26,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 26,
+            &quot;column&quot;: 31
+          }
+        },
+        &quot;20&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 29,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 31,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;21&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 30,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 30,
+            &quot;column&quot;: 25
+          }
+        },
+        &quot;22&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 34,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 42,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;23&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 36,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 36,
+            &quot;column&quot;: 35
+          }
+        },
+        &quot;24&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 37,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 37,
+            &quot;column&quot;: 69
+          }
+        },
+        &quot;25&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 40,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 40,
+            &quot;column&quot;: 32
+          }
+        },
+        &quot;26&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 41,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 41,
+            &quot;column&quot;: 22
+          }
+        },
+        &quot;27&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 44,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 44,
+            &quot;column&quot;: 21
+          }
+        }
+      },
+      &quot;fnMap&quot;: {
+        &quot;0&quot;: {
+          &quot;name&quot;: &quot;(anonymous_0)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 29,
+              &quot;column&quot;: 8
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 29,
+              &quot;column&quot;: 9
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 29,
+              &quot;column&quot;: 33
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 31,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 29
+        },
+        &quot;1&quot;: {
+          &quot;name&quot;: &quot;(anonymous_1)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 34,
+              &quot;column&quot;: 8
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 34,
+              &quot;column&quot;: 9
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 34,
+              &quot;column&quot;: 38
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 42,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 34
+        }
+      },
+      &quot;branchMap&quot;: {
+        &quot;0&quot;: {
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 37,
+              &quot;column&quot;: 21
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 37,
+              &quot;column&quot;: 68
+            }
+          },
+          &quot;type&quot;: &quot;cond-expr&quot;,
+          &quot;locations&quot;: [
+            {
+              &quot;start&quot;: {
+                &quot;line&quot;: 37,
+                &quot;column&quot;: 60
+              },
+              &quot;end&quot;: {
+                &quot;line&quot;: 37,
+                &quot;column&quot;: 63
+              }
+            },
+            {
+              &quot;start&quot;: {
+                &quot;line&quot;: 37,
+                &quot;column&quot;: 66
+              },
+              &quot;end&quot;: {
+                &quot;line&quot;: 37,
+                &quot;column&quot;: 68
+              }
+            }
+          ],
+          &quot;line&quot;: 37
+        },
+        &quot;1&quot;: {
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 40,
+              &quot;column&quot;: 13
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 40,
+              &quot;column&quot;: 30
+            }
+          },
+          &quot;type&quot;: &quot;binary-expr&quot;,
+          &quot;locations&quot;: [
+            {
+              &quot;start&quot;: {
+                &quot;line&quot;: 40,
+                &quot;column&quot;: 13
+              },
+              &quot;end&quot;: {
+                &quot;line&quot;: 40,
+                &quot;column&quot;: 23
+              }
+            },
+            {
+              &quot;start&quot;: {
+                &quot;line&quot;: 40,
+                &quot;column&quot;: 27
+              },
+              &quot;end&quot;: {
+                &quot;line&quot;: 40,
+                &quot;column&quot;: 30
+              }
+            }
+          ],
+          &quot;line&quot;: 40
+        }
+      },
+      &quot;s&quot;: {
+        &quot;0&quot;: 2,
+        &quot;1&quot;: 2,
+        &quot;2&quot;: 2,
+        &quot;3&quot;: 2,
+        &quot;4&quot;: 2,
+        &quot;5&quot;: 2,
+        &quot;6&quot;: 2,
+        &quot;7&quot;: 2,
+        &quot;8&quot;: 2,
+        &quot;9&quot;: 2,
+        &quot;10&quot;: 2,
+        &quot;11&quot;: 2,
+        &quot;12&quot;: 2,
+        &quot;13&quot;: 2,
+        &quot;14&quot;: 2,
+        &quot;15&quot;: 2,
+        &quot;16&quot;: 2,
+        &quot;17&quot;: 2,
+        &quot;18&quot;: 2,
+        &quot;19&quot;: 2,
+        &quot;20&quot;: 2,
+        &quot;21&quot;: 0,
+        &quot;22&quot;: 2,
+        &quot;23&quot;: 0,
+        &quot;24&quot;: 0,
+        &quot;25&quot;: 0,
+        &quot;26&quot;: 0,
+        &quot;27&quot;: 2
+      },
+      &quot;f&quot;: {
+        &quot;0&quot;: 0,
+        &quot;1&quot;: 0
+      },
+      &quot;b&quot;: {
+        &quot;0&quot;: [
+          0,
+          0
+        ],
+        &quot;1&quot;: [
+          0,
+          0
+        ]
+      },
+      &quot;_coverageSchema&quot;: &quot;43e27e138ebf9cfc5966b082cf9a028302ed4184&quot;,
+      &quot;hash&quot;: &quot;ee6d9c0b9440a339829342d825479d992d9f6877&quot;
+    },
+    &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;index.js&quot;: {
+      &quot;path&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;index.js&quot;,
+      &quot;statementMap&quot;: {
+        &quot;0&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 14
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 32
+          }
+        },
+        &quot;1&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 13
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 29
+          }
+        },
+        &quot;2&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 5,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 7,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;3&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 44
+          }
+        },
+        &quot;4&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 9,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 9,
+            &quot;column&quot;: 24
+          }
+        }
+      },
+      &quot;fnMap&quot;: {
+        &quot;0&quot;: {
+          &quot;name&quot;: &quot;(anonymous_0)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 16
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 17
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 41
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 7,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 5
+        }
+      },
+      &quot;branchMap&quot;: {},
+      &quot;s&quot;: {
+        &quot;0&quot;: 2,
+        &quot;1&quot;: 2,
+        &quot;2&quot;: 2,
+        &quot;3&quot;: 0,
+        &quot;4&quot;: 2
+      },
+      &quot;f&quot;: {
+        &quot;0&quot;: 0
+      },
+      &quot;b&quot;: {},
+      &quot;_coverageSchema&quot;: &quot;43e27e138ebf9cfc5966b082cf9a028302ed4184&quot;,
+      &quot;hash&quot;: &quot;1539a55962fe226a87a745db0ca8b8a48638fa3e&quot;
+    },
+    &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;exercise&#x2F;users.js&quot;: {
+      &quot;path&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;exercise&#x2F;users.js&quot;,
+      &quot;statementMap&quot;: {
+        &quot;0&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 14
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 32
+          }
+        },
+        &quot;1&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 13
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 29
+          }
+        },
+        &quot;2&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 5,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 7,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;3&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 38
+          }
+        },
+        &quot;4&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 10,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 12,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;5&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 11,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 11,
+            &quot;column&quot;: 38
+          }
+        },
+        &quot;6&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 14,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 14,
+            &quot;column&quot;: 24
+          }
+        }
+      },
+      &quot;fnMap&quot;: {
+        &quot;0&quot;: {
+          &quot;name&quot;: &quot;(anonymous_0)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 16
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 17
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 41
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 7,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 5
+        },
+        &quot;1&quot;: {
+          &quot;name&quot;: &quot;(anonymous_1)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 26
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 27
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 51
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 12,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 10
+        }
+      },
+      &quot;branchMap&quot;: {},
+      &quot;s&quot;: {
+        &quot;0&quot;: 2,
+        &quot;1&quot;: 2,
+        &quot;2&quot;: 2,
+        &quot;3&quot;: 0,
+        &quot;4&quot;: 2,
+        &quot;5&quot;: 2,
+        &quot;6&quot;: 2
+      },
+      &quot;f&quot;: {
+        &quot;0&quot;: 0,
+        &quot;1&quot;: 2
+      },
+      &quot;b&quot;: {},
+      &quot;_coverageSchema&quot;: &quot;43e27e138ebf9cfc5966b082cf9a028302ed4184&quot;,
+      &quot;hash&quot;: &quot;4b467ba4ac2322597de3e182cd55c7c040b3abe5&quot;
+    },
+    &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;solution&#x2F;users.js&quot;: {
+      &quot;path&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;routes&#x2F;solution&#x2F;users.js&quot;,
+      &quot;statementMap&quot;: {
+        &quot;0&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 14
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 1,
+            &quot;column&quot;: 32
+          }
+        },
+        &quot;1&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 13
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 2,
+            &quot;column&quot;: 29
+          }
+        },
+        &quot;2&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 5,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 7,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;3&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 6,
+            &quot;column&quot;: 38
+          }
+        },
+        &quot;4&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 10,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 12,
+            &quot;column&quot;: 3
+          }
+        },
+        &quot;5&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 11,
+            &quot;column&quot;: 2
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 11,
+            &quot;column&quot;: 38
+          }
+        },
+        &quot;6&quot;: {
+          &quot;start&quot;: {
+            &quot;line&quot;: 14,
+            &quot;column&quot;: 0
+          },
+          &quot;end&quot;: {
+            &quot;line&quot;: 14,
+            &quot;column&quot;: 24
+          }
+        }
+      },
+      &quot;fnMap&quot;: {
+        &quot;0&quot;: {
+          &quot;name&quot;: &quot;(anonymous_0)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 16
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 17
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 5,
+              &quot;column&quot;: 41
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 7,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 5
+        },
+        &quot;1&quot;: {
+          &quot;name&quot;: &quot;(anonymous_1)&quot;,
+          &quot;decl&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 26
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 27
+            }
+          },
+          &quot;loc&quot;: {
+            &quot;start&quot;: {
+              &quot;line&quot;: 10,
+              &quot;column&quot;: 51
+            },
+            &quot;end&quot;: {
+              &quot;line&quot;: 12,
+              &quot;column&quot;: 1
+            }
+          },
+          &quot;line&quot;: 10
+        }
+      },
+      &quot;branchMap&quot;: {},
+      &quot;s&quot;: {
+        &quot;0&quot;: 2,
+        &quot;1&quot;: 2,
+        &quot;2&quot;: 2,
+        &quot;3&quot;: 0,
+        &quot;4&quot;: 2,
+        &quot;5&quot;: 0,
+        &quot;6&quot;: 2
+      },
+      &quot;f&quot;: {
+        &quot;0&quot;: 0,
+        &quot;1&quot;: 0
+      },
+      &quot;b&quot;: {},
+      &quot;_coverageSchema&quot;: &quot;43e27e138ebf9cfc5966b082cf9a028302ed4184&quot;,
+      &quot;hash&quot;: &quot;8f3250aeba6586e8741a00b449ea64cd344a25ca&quot;
+    }
+  }
 }</div>
         <div class="d-none" id="test-global-config">{
   &quot;bail&quot;: 0,
   &quot;changedFilesWithAncestor&quot;: false,
-  &quot;collectCoverage&quot;: false,
+  &quot;collectCoverage&quot;: true,
   &quot;collectCoverageFrom&quot;: null,
   &quot;coverageDirectory&quot;: &quot;&#x2F;home&#x2F;nodejs&#x2F;app&#x2F;coverage&quot;,
   &quot;coverageReporters&quot;: [
