@@ -12,20 +12,6 @@ services:
       - tddnetwork
     ports:
       - 3000:3000
-  # tddlearning.com:
-  #   build: ./sign-up
-  #   container_name: tddlearning.com
-  #   command: ["pm2-dev", "pm2.docker.process.signup.api.yml"]
-  #   #command: ["npm", "start"] ## COMMENT this line to RUN with MP2 instead of NPM
-  #   volumes:
-  #     - ./sign-up:/home/nodejs/app
-  #     - /home/nodejs/app/node_modules
-  #   networks:
-  #     - providernetwork
-  #   ports:
-  #     - 3001:3001
-  #   depends_on:
-  #     - api.learning.com
   mongo-instance:
     container_name: mongo-instance
     image: mongo:4.0.4

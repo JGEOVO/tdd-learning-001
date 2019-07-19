@@ -23,8 +23,7 @@ Setup your local environment with:
 
 ### Quickly start on exercise
 
-- Being on the root project directory run, `docker-compose up --build` ,  it will starting running:
- - Api in Express in the port 3000
+- Being on the root project directory run, `docker-compose up --build` ,  it will starting running an Api with Express in the port 3000
  - Mongo Instance
 
 - Access the container with running the command `docker-compose exec api.learning.com bash`
