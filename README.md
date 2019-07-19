@@ -9,16 +9,24 @@ This Workshop consists of quickly boosting the basics of Test Driven Development
 
 Setup your local environment with:
 
-- NodeJS > v10
-- git
-- Redis Server
-- Docker (optional)
+- Git
+- Docker
+- Port 3000, Available in your host machine
 
 ### Agenda
 
-- 20 mins - TDD
-- 15 mins - Exercise part 1
-- 5 mins - Review
-- 15 mins - Exercise part 2
-- 5 mins - Review
-- 5 mins - Conclusions
+- TDD Fundamentals
+- Exercise
+- Review
+- Conclusions
+
+
+### Quickly start on exercise
+
+- Being on the root project directory run, `docker-compose up --build` ,  it will starting running:
+ - Api in Express in the port 3000
+ - Mongo Instance
+
+- Access the container with running the command `docker-compose exec api.learning.com bash`
+
+- Once inside the container, run the command `npm test`
