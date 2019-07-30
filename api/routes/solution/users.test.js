@@ -5,8 +5,8 @@ const request = require('supertest');
 const app = require('../../app');
 
 
-describe('POST /users/subscribe', () => {
-  const enpointRoute = `/users/subscribe`;
+describe('POST /userssample/subscribesample', () => {
+  const enpointRoute = `/userssample/subscribesample`;
   const validInput = { body: { email: 'asd@asd.com', name: 'Jorge' } };
   const invalidInput = { body: { foo: 'bar' } };
 

@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
 /* POST stores a new person interested in the condorlabs conference */
-router.post('/subscribe', function(req, res, next) {
-  res.send('respond with a resource');
+router.post('/subscribesample', function (req, res, next) {
+  if (req.body && req.body.email && req.body.name) {
+    res.send().status(200);
+  } else {
+    res.status(400).send();
+  }
+
 });
 
 module.exports = router;
