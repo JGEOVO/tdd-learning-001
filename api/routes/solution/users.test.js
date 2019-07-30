@@ -5,17 +5,27 @@ const request = require('supertest');
 const app = require('../../app');
 
 
-test('two plus two is four', () => {
-    expect(2 + 2).to.eql(4);
+describe('POST /users/subscribe', () => {
+  const enpointRoute = `/users/subscribe`;
+  const validInput = { body: { email: 'asd@asd.com', name: 'Jorge' } };
+  const invalidInput = { body: { foo: 'bar' } };
+
+  describe('When the request has invalid input data', () => {
+    it('should return a 400 status code', async () => {
+      const res = await request(app)
+        .post(enpointRoute)
+        .send(invalidInput.body);
+      expect(res.status).to.eql(400);
+    });
   });
 
-  describe('POST /users/subscribe', () => {
-    const enpointRoute = `/users/subscribe`;
-    const validInput = {body:{email:'asd@asd.com'}};
+
+  describe('When the request has valid input data', () => {
     it('should return a 200 status code', async () => {
       const res = await request(app)
         .post(enpointRoute)
-        .send(validInput.body)
+        .send(validInput.body);
       expect(res.status).to.eql(200);
     });
   });
+});
