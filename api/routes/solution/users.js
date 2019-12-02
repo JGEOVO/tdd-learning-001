@@ -10,7 +10,7 @@ router.post('/subscribesample', [
   middlewareValidateRequest.validate(schema.schema),
   async (req, res, next) => {
     try {
-      await mongoose.connect('mongodb://mongo-instance/my_database', {
+      await mongoose.connect(process.env.MONGO_URI || 'mongodb://mongo-instance/my_database', {
         useNewUrlParser: true
       });
 

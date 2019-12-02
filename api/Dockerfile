@@ -1,5 +1,5 @@
 # Pull base image from stock node image.
-FROM collinestes/docker-node-oracle:8
+FROM node:8
 
 #install PM2, reference: http://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs
 RUN npm install pm2 -g
