@@ -1,5 +1,5 @@
 const path = require('path');
-require('dotenv').config({ path: `${path.dirname(__dirname)}/.env` });
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var cookieParser = require('cookie-parser');
@@ -26,7 +26,7 @@ app.use('/userssample', usersSolutionRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
