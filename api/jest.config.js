@@ -1,6 +1,6 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-
+console.log('process.env.NODE_ENV:', process.env.NODE_ENV)
 module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
