@@ -1,25 +1,23 @@
-name: tdd
+name: ci-api
 
-# Run this workflow every time a new commit pushed to your repository
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  super-lint:
-    # Name the Job
-    name: Lint code base
-    # Set the type of machine to run on
+  ci-api:
+    name: Run unit tests
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: api
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-
-      # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Node
+        uses: actions/setup-node@v1
+      - name: Install api deps
+        run: npm install
+      - name: Run tests
+        run: npm test
